@@ -11,7 +11,16 @@
   .header{
     background-image: linear-gradient(to bottom, #020202, #0e0e0f, #171718, #1d1e20, #242528, #242528, #252427, #252427, #1e1d1f, #171617, #0e0d0d, #000000);
   }
-  
+  /* body related style */
+  body{
+    background-color: blueviolet;
+  }
+  /* shared style */
+.p-1{
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.50);
+}
+
   /* navbar related style */
   .navmain{
     /* border: 2px solid tomato; */
@@ -114,10 +123,7 @@ width: 50%;
 font-size: 2rem;
 
 }
-.p-1{
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.50);
-}
+
 .header-right{
     width: 50%;
 
@@ -129,20 +135,106 @@ font-size: 2rem;
   width: 100%;
 }
 
-.header-end{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .shape{
 font-style: italic;
 font-size: 500;
 }
 
+/* Change Your Habits related styles started */
+.change-container{
+  border: 2px solid red;
+  
+
+}
+
+.container-main{
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.change-title{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.change-title h1{
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+}
+.card-container{
+
+  display: flex;
+  gap: 20px;
+}
+.card{
+
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+
+}
+.card h3{
+  color: white;
+}
+
+.img-card{
+  border-radius: 50%;
+}
+/* container end related style */
+.container-end{
+display: flex;
+gap: 160px;
+max-width: 1060px;
+margin: 0 auto;
+
+border-radius: 18px;
+background: rgb(34, 34, 34);
+margin-top: 90px;
+}
+.container-end-title{
+justify-content: center;
+align-items: center;
+text-align:left;
+margin-top: 40px;
+margin-left: 54px;
+margin-bottom: 40px;
+}
+.container-end-title h1{
+  font-size:48px;
+  font-weight: 900;
+  color: white;
+}
+.container-end-img-container{
+margin-top: 25px;
+margin-right: 25px;
+margin-bottom: 20px;
+}
+
+.container-end .container-end-img-container img{
+  border-radius: 20px;
+  width: 100%;
+}
+
+.primary-btn-01{
+  border: none;
+  border-radius: 40px;
+  font-size:1rem;
+  color: white;
+  background-color: rgb(230, 83, 60);
+  padding: 16px 40px 16px 40px;
+}
+
+
 
 @media screen and (max-width:576px) {
-  .navmain, .header-main{
+  .navmain, 
+  .header-main{
     max-width: 80%;
     flex-direction: column;
     justify-content: center;
@@ -157,7 +249,29 @@ font-size: 500;
       margin-left: -10px;
       position: absolute;
   }
-  
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container-end{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 auto;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    margin-top: 50px;
+    }
+
+
+
+
+
+
+
+
+
 }
 
 
